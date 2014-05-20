@@ -8,7 +8,7 @@ struct Matrix* create_matrix(int row, int col)
 {
 	struct Matrix* pMatrix = NULL;
 
-	pMatrix = malloc(sizeof(struct Matrix));
+	pMatrix = (struct Matrix*) malloc(sizeof(struct Matrix));
 	if (pMatrix == NULL) {
 		return NULL;
 	}
